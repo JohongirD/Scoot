@@ -11,6 +11,8 @@ header{
     &__btns button{
         background: none;
         border:none;
+    }
+    &__btns{
         display: none;
         @include phone{
             display: block;

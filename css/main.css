@@ -39,10 +39,12 @@ header {
 .navbar__btns button {
   background: none;
   border: none;
+}
+.navbar__btns {
   display: none;
 }
 @media (max-width: 768px) {
-  .navbar__btns button {
+  .navbar__btns {
     display: block;
   }
 }
@@ -157,4 +159,120 @@ header {
 
 .show {
   transform: translateX(0);
+}
+
+.hero-bg {
+  background-image: url(../../images/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 992px) {
+  .hero-bg {
+    background-image: url(../../images/bg-hero-tablet.jpg);
+  }
+}
+
+.hero-bg-color {
+  opacity: 0.75;
+  background: #2F3B59;
+}
+
+.hero {
+  padding: 153px 0;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .hero {
+    padding: 137px 0 217px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 115px 0 180px;
+  }
+}
+.hero__title {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  max-width: 500px;
+}
+@media (max-width: 992px) {
+  .hero__title {
+    margin: 0 auto;
+    max-width: 573px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__title {
+    max-width: 300px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.786px;
+  }
+}
+.hero__main {
+  display: flex;
+  column-gap: 57px;
+  position: relative;
+}
+.hero__main__empty {
+  width: 38px;
+}
+@media (max-width: 992px) {
+  .hero__main__empty {
+    display: none;
+  }
+}
+.hero__main__text {
+  color: #fff;
+  font-family: "Lexend Deca Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 387px;
+  margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .hero__main__text {
+    margin: 24px 0 32px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__main__text {
+    max-width: 274px;
+    margin: 24px 0 34px;
+  }
+}
+.hero__main__content {
+  position: relative;
+}
+@media (max-width: 992px) {
+  .hero__main__content {
+    margin: 0 auto;
+  }
+}
+.hero__main__line {
+  position: absolute;
+  top: 80px;
+  left: -167px;
+}
+@media (max-width: 992px) {
+  .hero__main__line {
+    display: none;
+    position: none;
+  }
+}
+.hero__main__arrow {
+  position: absolute;
+  bottom: 2px;
+  left: 405px;
+}
+@media (max-width: 992px) {
+  .hero__main__arrow {
+    bottom: -176px;
+    left: -354px;
+  }
 }/*# sourceMappingURL=main.css.map */
