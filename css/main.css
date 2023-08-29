@@ -8,11 +8,11 @@
 
 @font-face {
   font-family: "Lexend Deca Regular", sans-serif;
-  src: url(../../fonts/LexendDeca-Regular.ttf);
+  src: url(../fonts/LexendDeca-Regular.ttf);
 }
 @font-face {
   font-family: "Space Mono Bold", monospace;
-  src: url(../../fonts/SpaceMono-Bold.ttf);
+  src: url(../fonts/SpaceMono-Bold.ttf);
 }
 .container {
   margin: 0 auto;
@@ -173,18 +173,18 @@ header {
 }
 
 .hero-bg {
-  background-image: url(../../images/bg-hero.jpg);
+  background-image: url(../images/bg-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (max-width: 992px) {
   .hero-bg {
-    background-image: url(../../images/bg-hero-tablet.jpg);
+    background-image: url(../images/bg-hero-tablet.jpg);
   }
 }
 @media (max-width: 768px) {
   .hero-bg {
-    background-image: url(../../images/bg-hero-phone.jpg);
+    background-image: url(../images/bg-hero-phone.jpg);
   }
 }
 
@@ -624,7 +624,7 @@ header {
   background-color: #495567;
 }
 .sign-up-bg {
-  background-image: url(../../images/icons/circles.svg);
+  background-image: url(../images/icons/circles.svg);
   background-repeat: no-repeat;
   background-position: 237px 157px;
   padding: 102px 0;
