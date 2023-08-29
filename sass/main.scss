@@ -9,11 +9,38 @@
 @import './blocs/variables';
 @import './blocs/container';
 @import './blocs/mixin';
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+
 body{
     overflow-x: hidden;
     font-family: $title-font;
+}
+main{
+    min-height: 100%;
 }
 @import './blocs/navbar';
 @import './blocs/hero';
 @import './blocs/how-buy';
 @import './blocs/easy-to-use';
+@import './blocs/sign-up';
+@import './blocs/footer';
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio:2),
+only screen and (-o-min-device-pixel-ratio:2/1),
+only screen and (min-device-pixel-ratio:2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution:2dppx){
+    .hero-bg{
+        background-image:url(../images/bg-hero-2.jpg);
+        @include tablet{
+            background-image:url(../images/bg-hero-tablet-2.jpg);
+        }
+        @include phone{
+            background-image:url(../images/bg-hero-phone-2.jpg);
+        }
+    }
+}

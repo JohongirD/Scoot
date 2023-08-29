@@ -1,0 +1,48 @@
+footer{
+    background-color:$bg-menu-phone;
+}
+.contact{
+    padding: 35px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    @include phone{
+        padding: 64px 0 88px;
+        flex-direction: column;
+        row-gap: 85px;
+    }
+    &__nav{
+        @include phone{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap:41px;
+        }
+        &__logo{
+            color:$white-color;
+        }
+        &__menu{
+            @include phone{
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+                justify-content: center;
+            }
+        }
+    }
+    &__icons{
+        max-width: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        &__item{
+            color:$button-color;
+            transition: 0.3s ease;
+        }
+        &__item:hover{
+            color:$white-color;
+            cursor: pointer;
+        }
+    }
+}

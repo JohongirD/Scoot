@@ -21,9 +21,18 @@
   width: 100%;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Space Mono Bold", monospace;
+}
+
+main {
+  min-height: 100%;
 }
 
 header {
@@ -71,7 +80,6 @@ header {
     max-width: 66vw;
     width: 100%;
     justify-content: space-between;
-    box-shadow: 35vw 0px 0px 0px rgb(0, 0, 0);
   }
 }
 .navbar__center {
@@ -129,6 +137,7 @@ header {
   border: none;
   max-width: 180px;
   width: 100%;
+  transition: 0.3s ease;
 }
 @media (max-width: 768px) {
   .navbar__btn {
@@ -141,6 +150,7 @@ header {
   background-color: #fff;
   color: #FCB72B;
   padding: 11.5px 36px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -268,6 +278,9 @@ header {
     text-align: center;
   }
 }
+.hero__main__content__btn:hover {
+  background-color: #2F3B59;
+}
 .hero__main__line {
   position: absolute;
   top: 80px;
@@ -329,6 +342,7 @@ header {
     max-width: none;
     display: flex;
     column-gap: 80px;
+    justify-content: center;
   }
 }
 @media (max-width: 768px) {
@@ -455,7 +469,7 @@ header {
 }
 
 .easy-to-use {
-  padding: 40px 0;
+  padding: 40px 0 200px;
 }
 .easy-to-use__items {
   display: flex;
@@ -603,5 +617,181 @@ header {
 @media (max-width: 768px) {
   .arrow-right {
     top: 0%;
+  }
+}
+
+.sign-up {
+  background-color: #495567;
+}
+.sign-up-bg {
+  background-image: url(../../images/icons/circles.svg);
+  background-repeat: no-repeat;
+  background-position: 237px 157px;
+  padding: 102px 0;
+}
+@media (max-width: 992px) {
+  .sign-up-bg {
+    padding: 62px 0;
+    background-position: -122px 140px;
+  }
+}
+@media (max-width: 768px) {
+  .sign-up-bg {
+    padding: 88px 0;
+    background-position: -530px 134px;
+  }
+}
+.sign-up__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .sign-up__main {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .sign-up__main {
+    max-width: 311px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.sign-up__main__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+  max-width: 410px;
+}
+@media (max-width: 992px) {
+  .sign-up__main__title {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .sign-up__main__title {
+    width: 100%;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.429px;
+  }
+}
+.sign-up__main__app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 18px;
+}
+@media (max-width: 992px) {
+  .sign-up__main__app {
+    column-gap: 12px;
+  }
+}
+.sign-up__main__app__app-store {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px 9px 16px;
+  column-gap: 12px;
+  border-radius: 4px;
+  background-color: #E5ECF4;
+  border: none;
+}
+.sign-up__main__app__app-store__texts__comment {
+  color: #495567;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: -0.446px;
+}
+.sign-up__main__app__app-store__texts__name {
+  color: #495567;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.893px;
+}
+
+.circles {
+  position: absolute;
+  top: 53px;
+  left: 246px;
+}
+@media (max-width: 992px) {
+  .circles {
+    top: 81px;
+    left: -143px;
+  }
+}
+
+footer {
+  background-color: #333A44;
+}
+
+.contact {
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 64px 0 88px;
+    flex-direction: column;
+    row-gap: 85px;
+  }
+}
+@media (max-width: 768px) {
+  .contact__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 41px;
+  }
+}
+.contact__nav__logo {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .contact__nav__menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    justify-content: center;
+  }
+}
+.contact__icons {
+  max-width: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__icons__item {
+  color: #FCB72B;
+  transition: 0.3s ease;
+}
+.contact__icons__item:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: url(../images/bg-hero-2.jpg);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 992px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 992px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 992px), only screen and (min-device-pixel-ratio: 2) and (max-width: 992px), only screen and (min-resolution: 192dpi) and (max-width: 992px), only screen and (min-resolution: 2dppx) and (max-width: 992px) {
+  .hero-bg {
+    background-image: url(../images/bg-hero-tablet-2.jpg);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 768px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 768px), only screen and (min-device-pixel-ratio: 2) and (max-width: 768px), only screen and (min-resolution: 192dpi) and (max-width: 768px), only screen and (min-resolution: 2dppx) and (max-width: 768px) {
+  .hero-bg {
+    background-image: url(../images/bg-hero-phone-2.jpg);
   }
 }/*# sourceMappingURL=main.css.map */
