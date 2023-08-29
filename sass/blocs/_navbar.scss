@@ -39,7 +39,6 @@ header{
             max-width: 66vw; 
             width: 100%;
             justify-content: space-between;
-            box-shadow: 35vw 0px 0px 0px rgba(0,0,0,7487);
         }
     }
     &__center{
@@ -91,6 +90,7 @@ header{
         border:none;
         max-width: 180px;
         width: 100%;
+        transition: 0.3s ease;
         @include phone{
             max-width: 192px;
             width: 100%;
@@ -101,6 +101,7 @@ header{
         background-color:$white-color;
         color:$button-color;
         padding: 11.5px 36px;
+        cursor: pointer;
     }
 }
 .help-button{

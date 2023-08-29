@@ -21,6 +21,7 @@
                 max-width: none;
                 display: flex;
                 column-gap: 80px;
+                justify-content: center;
             }
             @include phone{
                 flex-direction: column;

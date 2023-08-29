@@ -11,7 +11,7 @@
 }
 .hero-bg-color{
     opacity: 0.75;
-    background: #2F3B59;
+    background: $bg-hero-color;
 }
 
 
@@ -81,6 +81,9 @@
             @include tablet{
                 margin: 0 auto;
                 text-align: center;
+            }
+            &__btn:hover{
+                background-color:$bg-hero-color;
             }
         }
         &__line{
