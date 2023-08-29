@@ -113,6 +113,7 @@
                     }
                     @include phone{
                         max-width: 289px;
+                        margin: 0 auto;
                     }
                 }
             }
