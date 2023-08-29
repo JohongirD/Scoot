@@ -1,0 +1,124 @@
+.easy-to-use{
+    padding: 40px 0;
+    &__items{
+        display: flex;
+        flex-direction: column;
+        row-gap: 160px;
+        @include tablet{
+            row-gap: 128px;
+        }
+        &__card{
+            display: flex;
+            flex-direction: row-reverse;
+            column-gap: 220px;
+            align-items:center;
+            position: relative;
+            @include tablet{
+                flex-direction: column;
+                row-gap: 56px;
+            }
+            &__images{
+                position: relative;
+                z-index: 2;
+            }
+            &__arrow{
+                position: absolute;
+                top: 64%;
+                right: -152px;
+                @include phone{
+                    top: 52%;
+                    right: -425px;
+                }
+            }
+            &__image{
+                max-width: 445px;
+                max-height: 445px;
+                border-radius:50%;
+                @include phone{
+                    max-width: 311px;
+                    max-height: 311px;
+                }
+            }
+            &__texts{
+                max-width: 445px;
+                width: 100%;
+                @include tablet{
+                    text-align: center;
+                    max-width: 573px;
+                    margin: 0 auto;
+                }
+                &__title{
+                    color: $title-color;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 48px;
+                    letter-spacing: -2.143px;
+                    max-width: 388px;
+                    width: 100%;
+                    @include tablet{
+                        margin: 0 auto;
+                    }
+                    @include phone{
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: -1.429px;
+                        max-width: 311px;
+                    }
+                }
+                &__text{
+                    color: $text-color;
+                    font-family: $text-font;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin: 24px 0 40px;
+                    max-width: 404px;
+                    width: 100%;
+                    @include tablet{
+                        margin: 40px auto;
+                        max-width: 527px;
+                        width: 100%;
+                    }
+                    @include phone{
+                        max-width: 288.17px;
+                        margin: 32px auto;
+                    }
+                }
+                &__btn{
+                    padding: 14px 43.5px;
+                }
+            } 
+            &__circle{
+                position: absolute;
+                right: -174px;
+                z-index: 1;
+            }
+        }
+    }
+}
+.card-2{
+    flex-direction: row;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.arrow-left{
+    top: 0%;
+    left: -258px;
+    @include phone{
+        top: 10%;
+    }
+}
+.circle-left{
+    top: 3%;
+    left: -174px;
+
+}
+.arrow-right{
+    top: 16%;
+    right: -538px;
+    @include phone{
+        top:0%;
+    }
+}
