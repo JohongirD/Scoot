@@ -59,10 +59,11 @@ header {
 @media (max-width: 768px) {
   .navbar__menu-phone {
     display: flex;
+    z-index: 1;
     flex-direction: column;
     height: 100vh;
     position: fixed;
-    top: 75px;
+    top: 101px;
     left: 1px;
     transform: translateX(-200%);
     background-color: #333A44;
@@ -171,6 +172,11 @@ header {
     background-image: url(../../images/bg-hero-tablet.jpg);
   }
 }
+@media (max-width: 768px) {
+  .hero-bg {
+    background-image: url(../../images/bg-hero-phone.jpg);
+  }
+}
 
 .hero-bg-color {
   opacity: 0.75;
@@ -198,11 +204,14 @@ header {
   line-height: 56px;
   letter-spacing: -2.5px;
   max-width: 500px;
+  text-align: left;
+  margin: 0;
 }
 @media (max-width: 992px) {
   .hero__title {
     margin: 0 auto;
-    max-width: 573px;
+    max-width: 558px;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -232,12 +241,15 @@ header {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
+  text-align: left;
   max-width: 387px;
   margin: 40px 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .hero__main__text {
     margin: 24px 0 32px;
+    max-width: 527px;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -248,10 +260,12 @@ header {
 }
 .hero__main__content {
   position: relative;
+  text-align: left;
 }
 @media (max-width: 992px) {
   .hero__main__content {
     margin: 0 auto;
+    text-align: center;
   }
 }
 .hero__main__line {
@@ -273,6 +287,168 @@ header {
 @media (max-width: 992px) {
   .hero__main__arrow {
     bottom: -176px;
-    left: -354px;
+    left: -240px;
   }
+}
+@media (max-width: 768px) {
+  .hero__main__arrow {
+    left: -355px;
+  }
+}
+
+.how-buy {
+  padding: 160px 0;
+}
+@media (max-width: 992px) {
+  .how-buy {
+    padding: 122px 0;
+  }
+}
+.how-buy__items {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+@media (max-width: 992px) {
+  .how-buy__items {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .how-buy__items {
+    row-gap: 48px;
+  }
+}
+.how-buy__items__card {
+  max-width: 350px;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .how-buy__items__card {
+    max-width: none;
+    display: flex;
+    column-gap: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .how-buy__items__card {
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 311px;
+  }
+}
+.how-buy__items__card__icon-bg {
+  background-color: #FCB72B;
+  border-radius: 50%;
+  max-width: 96px;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .how-buy__items__card__icon-bg {
+    max-height: 96px;
+    min-width: 96px;
+  }
+}
+@media (max-width: 768px) {
+  .how-buy__items__card__icon-bg {
+    margin: 0 auto;
+    min-width: 56px;
+    min-height: 56px;
+  }
+}
+@media (max-width: 768px) {
+  .how-buy__items__card__icon-bg__icon {
+    width: 27px;
+    height: 22px;
+  }
+}
+.how-buy__items__card__line {
+  display: inline-block;
+  position: absolute;
+  width: 284px;
+  height: 31px;
+  background-color: #E5ECF4;
+  border: none;
+  top: 37%;
+  left: -284px;
+}
+@media (max-width: 992px) {
+  .how-buy__items__card__line {
+    height: 122px;
+    width: 31px;
+    left: 31px;
+    top: -119px;
+  }
+}
+@media (max-width: 768px) {
+  .how-buy__items__card__line {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .how-buy__items__card__texts {
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .how-buy__items__card__texts {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.how-buy__items__card__texts__title {
+  color: #495567;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+  margin-bottom: 27px;
+  margin-top: 40px;
+}
+@media (max-width: 992px) {
+  .how-buy__items__card__texts__title {
+    max-width: 400px;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .how-buy__items__card__texts__title {
+    margin-bottom: 24px;
+    font-size: 20px;
+    letter-spacing: -0.893px;
+  }
+}
+.how-buy__items__card__texts__text {
+  color: #939CAA;
+  font-family: "Lexend Deca Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 327px;
+}
+@media (max-width: 992px) {
+  .how-buy__items__card__texts__text {
+    max-width: 366px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .how-buy__items__card__texts__text {
+    max-width: 289px;
+  }
+}
+
+.line-1 {
+  z-index: 2;
+}
+
+.line-2 {
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

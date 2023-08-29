@@ -1,0 +1,127 @@
+.how-buy{
+    padding: 160px 0;
+    @include tablet{
+        padding: 122px 0;
+    }
+    &__items{
+        display: flex;
+        align-items:center;
+        column-gap: 30px;
+        @include tablet{
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        @include phone{
+            row-gap: 48px;
+        }
+        &__card{
+            max-width: 350px;
+            width:100%;
+            @include tablet{
+                max-width: none;
+                display: flex;
+                column-gap: 80px;
+            }
+            @include phone{
+                flex-direction: column;
+                row-gap: 24px;
+                max-width: 311px;
+            }
+            &__icon-bg{
+                background-color:$button-color;
+                border-radius: 50%;
+                max-width: 96px;
+                min-height: 96px;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                position: relative;
+                @include tablet{
+                    max-height: 96px;
+                    min-width: 96px;
+                }
+                @include phone{
+                    margin: 0 auto;
+                    min-width: 56px;
+                    min-height: 56px;
+                }
+                &__icon{
+                    @include phone{
+                        width:27px;
+                        height:22px;
+                    }
+                }
+            }
+            &__line{
+                display: inline-block;
+                position: absolute;
+                width: 284px;
+                height: 31px;
+                background-color:$circle-border-color;
+                border:none;
+                top: 37%;
+                left: -284px;
+                @include tablet{
+                    height: 122px;
+                    width: 31px;
+                    left: 31px;
+                    top: -119px;
+                }
+                @include phone{
+                    display: none;
+                }
+            }
+            &__texts{
+                @include tablet{
+                    max-width: 400px;
+                }
+                @include phone{
+                    // max-width: 311px;
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                &__title{
+                    color: $title-color;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: -1.071px;
+                    margin-bottom: 27px;
+                    margin-top: 40px;
+                    @include tablet{
+                        max-width: 400px;
+                        margin-top: 0;
+                        width: 100%;
+                    }
+                    @include phone{
+                        margin-bottom: 24px;
+                        font-size: 20px;
+                        letter-spacing: -0.893px;
+                    }
+                }
+                &__text{
+                    color: $text-color;
+                    font-family: $text-font;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    max-width: 327px;
+                    @include tablet{
+                        max-width: 366px;
+                        width: 100%;
+                    }
+                    @include phone{
+                        max-width: 289px;
+                    }
+                }
+            }
+        }
+    }
+}
+.line-1{
+    z-index: 2;
+}
+.line-2{
+    z-index: 1;
+}

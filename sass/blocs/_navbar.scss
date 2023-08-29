@@ -27,10 +27,11 @@ header{
         display: none;
         @include phone{
             display: flex;
+            z-index: 1;
             flex-direction: column;
             height: 100vh;
             position: fixed;
-            top: 75px;
+            top: 101px;
             left: 1px;
             transform: translateX(-200%);
             background-color: $bg-menu-phone;
